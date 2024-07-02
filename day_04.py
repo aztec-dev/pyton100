@@ -5,8 +5,6 @@ Project: create a rock, paper and scissors game using lists
 """
 import random
 
-options = []
-
 rock = '''
     _______
 ---'   ____)
@@ -37,6 +35,7 @@ scissors = '''
 player_choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.\n"))
 player_answer = []
 computer_answer = []
+options = []
 # Should the options be stored inside a list?
 # I think it should as I consider it to be data.
 
@@ -45,6 +44,7 @@ options.append(paper)
 options.append(scissors)
 
 # Display player choice in ascii art
+print("You chose:")
 if player_choice == 0:
     print(options[0])
     player_answer.append(options[0])
